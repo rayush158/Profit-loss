@@ -18,12 +18,12 @@ function calculateProfitAndLoss(initial, quantity, current) {
     var lossPercentage = (loss / initial) * 100;
 
     showOutput(
-      `Hey the loss is  ${loss} and the percent is    ${lossPercentage}% `);
+      `Hey the loss is  ${loss} and the percent is    ${lossPercentage.toFixed(2)}% `);
   } else if (current > initial) {
     var profit = (current - initial) * quantity;
     var profitPercentage = (profit / current) * 100;
-    showOutput(`Hey the profit is ${profit} and the percent is ${profitPercentage}% `);
-  } else {
+    showOutput(`Hey the profit is ${profit} and the percent is ${profitPercentage.toFixed(2)}% `);
+  } else{
     // the rest logic
     showOutput('No Pain No Gain and No Gain No Pain');
   }
@@ -31,7 +31,7 @@ function calculateProfitAndLoss(initial, quantity, current) {
     function showOutput(message){
         outputBox.innerHTML = message;
     }
-
+ 
 
 // calculateProfitAndLoss(100, 10, 110);
 // calculateProfitAndLoss(120, 10, 110);
