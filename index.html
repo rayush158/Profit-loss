@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <title>Stocks | Profit Loss</title>
 </head>
+
 <body>
+    <div class="container">
     <h1> Mark 14 - Stocks | Profit Loss</h1>
-<main>
-   
-    <label for="initial-price">Initial Price
-     <input type="number" placeholder="Enter Initinal Price Here " id="initial-price"   />
-    </label>
-    <label for="stock-quatity">Quantity Of Stocks
-        <input type="number" placeholder="Enter the number of stocks bought " id="stock-quatity"  />  
-       </label>
-       <label for="currrent-price">Current Price
-           <input type="number" placeholder="Enter Current Price of the Stocks" id="currrent-price"  />
-       </label>
     
-       <button id="submit-btn">Tell Me !!</button>
-        <div id = "output-box"></div>
-        <script src="app.js"></script>
-    </main>
+            <label for="initial-price">Initial Price
+                <input type="number" placeholder="Enter Initinal Price Here " id="initial-price" />
+            </label>
+            <label for="stock-quatity">Quantity Of Stocks
+                <input type="number" placeholder="Enter the number of stocks bought " id="stock-quatity"  />
+            </label>
+            <label for="currrent-price">Current Price
+                <input type="number" placeholder="Enter Current Price of the Stocks" id="currrent-price" />
+            </label>
+
+            <button id="submit-btn">Calculate</button>
+        
+        <div id="output-box"></div>
+    </div>
+    <script src="app.js"></script>
+
 </body>
+
 </html>
