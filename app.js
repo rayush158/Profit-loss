@@ -4,12 +4,15 @@ var currentPrice = document.querySelector("#currrent-price");
 var submitButton = document.querySelector("#submit-btn");
 var outputBox = document.querySelector("#output-box");
 
- submitButton.addEventListener('click', submitHandler) 
+ submitButton.addEventListener("click", submitHandler) 
 
 function submitHandler() {
   var ip = Number(initialPrice.value);
   var qty = Number(stocksQuantity.value);
   var curr = Number(currentPrice.value);
+  if(ip == 0 || qty==0 || curr==0){
+    showOutput("Please provide all inputs...")
+  } else
   calculateProfitAndLoss(ip, qty, curr);
 }
 function calculateProfitAndLoss(initial, quantity, current) {
