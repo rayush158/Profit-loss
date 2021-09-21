@@ -3,15 +3,15 @@
 *,
 *::before,
 *::after {
-  margin: .1rem;
+  margin: 0.1rem;
   box-sizing: border-box;
 }
 body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
-input{
-    margin: .2rem auto;
+input {
+  margin: 0.2rem auto;
   display: block;
   height: 2rem;
   text-align: center;
@@ -29,29 +29,29 @@ label {
   background-color: #615e5d;
   color: aliceblue;
   font-size: 1.2rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 h1 {
   color: #f1c40f;
   margin: 1.2rem 0;
 }
 
-    #submit-btn{
-        margin: 2rem auto;
-        display: block;
-        height: 2.5rem;
-        text-align: center;
-        border-radius: 0.8rem;
-        width: 7rem;
-        border: solid whitesmoke 2px;
-        font-size: large;
-        background-color:#615e5d ;
-        
-    
-    }
+#submit-btn {
+  cursor: pointer;
+  margin: 2rem auto;
+  display: block;
+  height: 2.5rem;
+  text-align: center;
+  width: 7rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border: solid whitesmoke 2px;
+  font-size: large;
+  background-color: #615e5d;
+}
 #output-box {
   display: block;
   padding: 1rem 2rem;
   margin: 1rem 0;
-  color: #ecf0f1;
+  color: #deebee;
 }
